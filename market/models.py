@@ -39,7 +39,7 @@ class Hostels(db.Model):
     type = db.Column(db.String(length=30), nullable=False)
     owner = db.Column(db.Integer(), db.ForeignKey('user.id'))
     def __repr__(self):
-        return f'Hostels {self.name}'
+        return f'Hostels {self.hs_name}'
 
 
 
